@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <td>제목</td>
+        <td>교육시작일</td>
+        <td>교육종료일</td>
+        <td>내용</td>
+    </tr>
+    {% for item in curriculum %}
+    <tr>
+        <td>{{item.idx}}</td>
+        <td><a href="/board/view?idx={{item.idx}}">{{item.subject}}</td>
+        <td>{{item.curr_start}}</td>
+        <td>{{item.curr_end}}</td>
+        <td>{{item.content}}</td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <td>제목</td>
+        <td>이름</td>
+        <td>교육과정</td>
+    </tr>
+    {% for item in curriculum %}
+    <tr>
+        <td>{{item.idx}}</td>
+        <td><a href="/board/view?idx={{item.idx}}">{{item.subject}}</a></td>
+        <td>{{item.start}}</td>
+        <td>{{item.}}</td>
+    </tr>
+    {% endfor %}
+</table>
